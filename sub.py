@@ -112,10 +112,10 @@ def submit(s: requests.Session, old: dict):
         'jcjgqr': old['jcjgqr'],
         # 'sfjcwhry': old['sfjcwhry'],  # 2020.9.16 del
         # 'sfjchbry': old['sfjchbry'],  # 2020.9.16 del
-        'sfjcbh': old['sfjcbh'],
-        'jcbhlx': old['jcbhlx'],
-        'sfcyglq': old['sfcyglq'],
-        'gllx': old['gllx'],
+        'sfjcbh': old['sfjcbh'],  # 是否接触病患
+        # 'jcbhlx': old['jcbhlx'], # 2021.1.29 del 接触病患类型
+        'sfcyglq': old['sfcyglq'],  # 是否处于隔离期
+        # 'gllx': old['gllx'],   # 2021.1.29 del 隔离类型
         'sfcxzysx': old['sfcxzysx'],
         'old_szdd': old['szdd'],
         'geo_api_info': old['old_city'],  # 保持昨天的结果
@@ -126,8 +126,8 @@ def submit(s: requests.Session, old: dict):
         'ljrq': old['ljrq'],  # 离京日期 add@2021.1.24
         'qwhd': old['qwhd'],  # 去往何地 add@2021.1.24
         'chdfj': old['chdfj'],  # 从何地返京 add@2021.1.24
-        'jcbhrq': old['jcbhrq'],
-        'glksrq': old['glksrq'],
+        # 'jcbhrq': old['jcbhrq'], # del 2021.1.29 接触病患日期
+        # 'glksrq': old['glksrq'], # del 2021.1.29 隔离开始日期
         'fxyy': old['fxyy'],
         'jcjg': old['jcjg'],
         'jcjgt': old['jcjgt'],
